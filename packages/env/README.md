@@ -21,5 +21,5 @@ process.env.MY_ENV_VAR = 'true';
 env('MY_ENV_VAR').boolean(); // true
 
 process.env.MY_ENV_VAR = 'hello, world';
-env('MY_ENV_VAR').array(); // ['hello', 'world']
+env('MY_ENV_VAR').array(', '); // ['hello', 'world'] - note the default separator is ', '
 ```

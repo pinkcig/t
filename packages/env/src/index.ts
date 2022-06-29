@@ -4,18 +4,14 @@ export function env(key: string, options: Partial<IEnvOptions> = {}) {
 
 	if (required && !value) throw new EnvironmentalError(`Missing required environmental variable ${key}`);
 
-	function makeResolver<T>(fn: (value: unknown) => T) {
-		return fn.bind(null, value);
-	}
-
 	return {
-		string: makeResolver((value) => String(value)),
-		integer: makeResolver((value) => Number(value)),
-		boolean: makeResolver((value) => Boolean(value)),
-		array: makeResolver((value) => {
-			const split = String(value).split(', ');
+		string: () => String(value),
+		number: () => Number(value),
+		boolean: () => Boolean(value),
+		array: (separator: string = ', ') => {
+			const split = String(value).split(separator);
 			return split.length ? split : [];
-		}),
+		},
 	};
 }
 
