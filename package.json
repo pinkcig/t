@@ -1,0 +1,27 @@
+{
+	"name": "@pinkcig/utilities",
+	"description": "Suite of packages for Faye's projects",
+	"version": "1.0.0",
+	"author": "Faye Keller (pinkcig)",
+	"license": "GPL-3.0",
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"build": "lerna run build",
+		"clean": "lerna run clean",
+		"format": "prettier --write '**/*.{ts,yml.json,md}' --ignore-path .gitignore"
+	},
+	"devDependencies": {
+		"@pinkcig/config": "*",
+		"@types/node": "^18.0.0",
+		"@types/prettier": "^2",
+		"lerna": "^5.1.4",
+		"prettier": "^2.7.1",
+		"shx": "^0.3.4",
+		"tsup": "^6.1.2",
+		"typescript": "^4.7.4"
+	},
+	"packageManager": "yarn@3.2.1",
+	"prettier": "@pinkcig/config"
+}
