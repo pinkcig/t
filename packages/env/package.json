@@ -1,6 +1,6 @@
 {
 	"name": "@pinkcig/env",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Utilities to handle environmental variables",
 	"author": "Faye Keller <fayekllr@gmail.com>",
 	"license": "GPL-3.0",
