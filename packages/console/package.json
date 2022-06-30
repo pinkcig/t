@@ -1,6 +1,6 @@
 {
 	"name": "@pinkcig/console",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Utilities for the console, logger included",
 	"author": "Faye Keller <fayekllr@gmail.com>",
 	"license": "GPL-3.0",
