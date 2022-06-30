@@ -4,6 +4,9 @@ node_modules/
 # Build
 build/
 
+# Coverage
+coverage/
+
 # Yarn stuff
 .yarn/*
 !.yarn/patches
