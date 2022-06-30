@@ -12,7 +12,7 @@
 	"files": [
 		"build/**/*.js",
 		"build/**/*.mjs",
-		"build/**/*.d"
+		"build/**/*.d.*"
 	],
 	"exports": {
 		"./tsconfig": {
