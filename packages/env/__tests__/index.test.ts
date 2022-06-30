@@ -43,7 +43,7 @@ describe('env', () => {
 			const result = env(KEY).string();
 			expect(result).toBe('mommy');
 			expect(result).toBeTypeOf('string');
-		})
+		});
 
 		test('GIVEN number THEN return correct value', () => {
 			process.env[KEY] = '1';
@@ -75,6 +75,6 @@ describe('env', () => {
 				const result = env(KEY).array('|');
 				expect(result).toEqual(['hello', 'world']);
 			});
-		})
+		});
 	});
 });
