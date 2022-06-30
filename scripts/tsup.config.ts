@@ -16,7 +16,7 @@ export const createTsupConfig = (options: Readonly<Pick<Options, 'esbuildOptions
 		clean: true,
 		dts: false,
 		entry: ['src/index.ts'],
-		minify: false,
+		minify: true,
 		format: ['cjs', 'esm', 'iife'],
 		skipNodeModulesBundle: true,
 		tsconfig: relative(__dirname, resolve(process.cwd(), 'src', 'tsconfig.json')),
