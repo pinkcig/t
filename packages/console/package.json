@@ -1,7 +1,7 @@
 {
-	"name": "@pinkcig/env",
+	"name": "@pinkcig/console",
 	"version": "1.0.0",
-	"description": "Utilities to handle environmental variables",
+	"description": "Utilities for the console, logger included",
 	"author": "Faye Keller <fayekllr@gmail.com>",
 	"license": "GPL-3.0",
 	"scripts": {

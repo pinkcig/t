@@ -1,26 +1,30 @@
 {
-  "name": "@pinkcig/config",
-  "version": "1.0.0",
-  "description": "Various configuration shared across Faye's projects",
-  "author": "Faye Keller <fayekllr@gmail.com>",
-  "license": "GPL-3.0",
-  "scripts": {
-    "build": "tsup && tsc -b src",
-    "clean": "shx rm -rf ./build"
-  },
-  "files": [
-    "build/**/*.js",
-    "build/**/*.mjs",
-    "build/**/*.d"
-  ],
-  "exports": {
-    "./tsconfig": {
-      "import": "./tsconfig.base.json",
-      "require": "./tsconfig.base.json"
-    },
-    ".": {
-      "import": "./build/index.mjs",
-      "require": "./build/index.js"
-    }
-  }
+	"name": "@pinkcig/config",
+	"version": "1.0.0",
+	"description": "Various configuration shared across Faye's projects",
+	"author": "Faye Keller <fayekllr@gmail.com>",
+	"license": "GPL-3.0",
+	"scripts": {
+		"build": "tsup && tsc -b src",
+		"prepack": "yarn build",
+		"clean": "shx rm -rf ./build"
+	},
+	"files": [
+		"build/**/*.js",
+		"build/**/*.mjs",
+		"build/**/*.d"
+	],
+	"exports": {
+		"./tsconfig": {
+			"import": "./tsconfig.base.json",
+			"require": "./tsconfig.base.json"
+		},
+		".": {
+			"import": "./build/index.mjs",
+			"require": "./build/index.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

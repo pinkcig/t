@@ -1222,12 +1222,24 @@ __metadata:
 "@pinkcig/config@*, @pinkcig/config@workspace:packages/config":
   version: 0.0.0-use.local
   resolution: "@pinkcig/config@workspace:packages/config"
+  dependencies:
+    console: ^0.7.2
+  languageName: unknown
+  linkType: soft
+
+"@pinkcig/console@workspace:packages/console":
+  version: 0.0.0-use.local
+  resolution: "@pinkcig/console@workspace:packages/console"
+  dependencies:
+    console: ^0.7.2
   languageName: unknown
   linkType: soft
 
 "@pinkcig/env@workspace:packages/env":
   version: 0.0.0-use.local
   resolution: "@pinkcig/env@workspace:packages/env"
+  dependencies:
+    console: ^0.7.2
   languageName: unknown
   linkType: soft
 
@@ -1912,6 +1924,13 @@ __metadata:
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
+  languageName: node
+  linkType: hard
+
+"console@npm:^0.7.2":
+  version: 0.7.2
+  resolution: "console@npm:0.7.2"
+  checksum: 10bf58a934cdfcedc7709d2897203aae03dea7a3a2f4bf69f7c0a0c075045e1eec2526c483149cdcd864ec964ba9e73e7bf8ef62320b84629e79db7a06011c94
   languageName: node
   linkType: hard
 
