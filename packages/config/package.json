@@ -1,6 +1,6 @@
 {
 	"name": "@pinkcig/config",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Various configuration shared across Faye's projects",
 	"author": "Faye Keller <fayekllr@gmail.com>",
 	"license": "GPL-3.0",
