@@ -3,6 +3,8 @@ import { colours, figures } from './decorations';
 
 export class Logger {
 	name: string;
+	logColours = { info: colours.cyan, warn: colours.yellow, error: colours.red, debug: colours.green };
+
 	readonly depth: number;
 	readonly joinBy: string;
 	readonly pretty: boolean;
@@ -48,8 +50,8 @@ export class Logger {
 		if (!this.pretty) return `[${this.name}] > ${level.padEnd(5)} ${figures[level]} ${args.join(this.joinBy)}`;
 
 		const namespace = this._colour(colours.grey, `[${this.name}] ${figures.arrow}`);
-		const messageLevel = this._colour(colours[level], level.padEnd(5));
-		const figure = this._colour(colours[level], figures[level]);
+		const messageLevel = this._colour(this.logColours[level], level.padEnd(5));
+		const figure = this._colour(this.logColours[level], figures[level]);
 		const message = this._colour(colours.lightGrey, ...args);
 
 		return `${this._dim(namespace)} ${this._underline(messageLevel)} ${this._bold(figure)} ${message}`;

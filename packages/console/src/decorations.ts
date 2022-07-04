@@ -7,10 +7,10 @@ export const figures = {
 };
 
 export const colours = {
-	info: '\x1b[36m',
-	warn: '\x1b[33m',
-	error: '\x1b[31m',
-	debug: '\x1b[32m',
+	cyan: '\x1b[36m',
+	yellow: '\x1b[33m',
+	red: '\x1b[31m',
+	green: '\x1b[32m',
 	bold: '\x1b[1m',
 	underline: '\x1b[4m',
 	reset: '\x1b[0m',
