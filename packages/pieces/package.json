@@ -1,0 +1,30 @@
+{
+	"name": "@pinkcig/pieces",
+	"version": "1.0.0",
+	"description": "Utility classes to provide modularity to your application",
+	"author": "Faye Keller <fayekllr@gmail.com>",
+	"license": "GPL-3.0",
+	"main": "build/index.js",
+	"module": "build/index.mjs",
+	"types": "build/index.d.ts",
+	"browser": "build/index.global.js",
+	"unpkg": "build/index.global.js",
+	"scripts": {
+		"build": "tsup && tsc -b src",
+		"prepack": "yarn build",
+		"clean": "shx rm -rf ./build"
+	},
+	"files": [
+		"build/**/*.js",
+		"build/**/*.mjs",
+		"build/**/*.d"
+	],
+	"exports": {
+		"import": "./build/index.mjs",
+		"require": "./build/index.js",
+		"types": "./build/index.d.ts"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

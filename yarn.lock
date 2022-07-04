@@ -1237,6 +1237,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@pinkcig/pieces@workspace:packages/pieces":
+  version: 0.0.0-use.local
+  resolution: "@pinkcig/pieces@workspace:packages/pieces"
+  languageName: unknown
+  linkType: soft
+
 "@pinkcig/utilities@workspace:.":
   version: 0.0.0-use.local
   resolution: "@pinkcig/utilities@workspace:."
