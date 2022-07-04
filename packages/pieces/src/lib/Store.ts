@@ -79,7 +79,7 @@ export abstract class Store<T extends Piece> extends EventEmitter {
 		const modules = [];
 
 		for (const value of net.default ? Object.values(net.default) : Object.values(net)) {
-			 modules.push(value);
+			modules.push(value);
 		}
 
 		return modules as { new (options: IPieceOptions): T }[];
