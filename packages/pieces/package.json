@@ -15,9 +15,9 @@
 		"clean": "shx rm -rf ./build"
 	},
 	"files": [
-		"build/**/*.js",
-		"build/**/*.mjs",
-		"build/**/*.d"
+		"build/**/*.js*",
+		"build/**/*.mjs*",
+		"build/**/*.d*"
 	],
 	"exports": {
 		"import": "./build/index.mjs",
